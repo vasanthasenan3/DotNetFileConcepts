@@ -1,0 +1,94 @@
+﻿<Window x:Class="clses.FileConcepts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:clses"
+        mc:Ignorable="d"
+        Title="FileConcepts" Background="WhiteSmoke" Height="450" Width="500">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- File Operations -->
+        <GroupBox Header="📄 File Operations"
+              Grid.Column="0"
+              Margin="5"
+              Foreground="White">
+            <StackPanel Margin="5">
+                <Button Content="Create File"
+                    Height="35"
+                    Margin="5"
+                    Background="#1E1E1E"
+                    Foreground="White"
+                    BorderBrush="Red"
+                    Click="Createfile_Click"/>
+
+                <Button Content="Write File"
+                    Height="35"
+                    Margin="5"
+                    Background="#1E1E1E"
+                    Foreground="White"
+                    BorderBrush="Red"
+                    Click="writefile_Click"/>
+
+                <Button Content="Read File"
+                    Height="35"
+                    Margin="5"
+                    Background="#1E1E1E"
+                    Foreground="White"
+                    BorderBrush="Red"
+                    Click="readfile_Click"/>
+
+                <Button Content="Delete File"
+                    Height="35"
+                    Margin="5"
+                    Background="#1E1E1E"
+                    Foreground="White"
+                    BorderBrush="Red"
+                    Click="deletefile_Click"/>
+            </StackPanel>
+        </GroupBox>
+
+        <!-- Folder Operations -->
+        <GroupBox Header="📁 Folder Operations"
+              Grid.Column="1"
+              Margin="5"
+              Foreground="White">
+            <StackPanel Margin="5">
+                <Button Content="Create Folder"
+                    Height="35"
+                    Margin="5"
+                    Background="#1E1E1E"
+                    Foreground="White"
+                    BorderBrush="Red"
+                    Click="btnCreatefolder_Click"/>
+
+                <Button Content="Folder Exists"
+                    Height="35"
+                    Margin="5"
+                    Background="#1E1E1E"
+                    Foreground="White"
+                    BorderBrush="Red"/>
+
+                <Button Content="Delete Folder"
+                    Height="35"
+                    Margin="5"
+                    Background="#1E1E1E"
+                    Foreground="White"
+                    BorderBrush="Red"
+                    Click="btndeletefolder_Click"/>
+
+                <Button Content="Get Files"
+                    Height="35"
+                    Margin="5"
+                    Background="#1E1E1E"
+                    Foreground="White"
+                    BorderBrush="Red"
+                    Click="btngetfiles_Click"/>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>
