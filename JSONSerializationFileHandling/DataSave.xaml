@@ -1,0 +1,49 @@
+﻿<Window x:Class="offerletter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:offerletter"
+        xmlns:lang="clr-namespace:Practiceforunstd2.Properties"
+        mc:Ignorable="d"
+        Title="OfferLetter" Height="600" Width="700">
+    <Window.Background>
+        <ImageBrush ImageSource="image/Bg.jpg" Stretch="UniformToFill"></ImageBrush>
+    </Window.Background>
+    <StackPanel>
+        <Label Content= "{x:Static lang:Resources.names}" ></Label>
+        <Border CornerRadius="15" Width="150" HorizontalAlignment="Left" BorderThickness="2" BorderBrush= "DarkGoldenrod" Background= "WhiteSmoke" Height="30">
+        <TextBox Name="txtname" Height="15" Width="140" BorderThickness="0" Background= "WhiteSmoke"></TextBox>
+        </Border>
+        <Label Content="{x:Static lang:Resources.username}"></Label>
+        <Border CornerRadius="15" Width="150" HorizontalAlignment="Left" BorderThickness="2" BorderBrush= "DarkGoldenrod" Background= "WhiteSmoke" Height="30">
+            <TextBox Name="txtusernamename" Height="15" Width="140" BorderThickness="0" Background= "WhiteSmoke"></TextBox>
+        </Border>
+        <Label Content="{x:Static lang:Resources.password}"></Label>
+        <Border CornerRadius="15" Width="150" HorizontalAlignment="Left" BorderThickness="2" BorderBrush= "DarkGoldenrod" Background= "WhiteSmoke" Height="30">
+            <PasswordBox  Name="txtpassword" Height="15" Width="140" BorderThickness="0" Background= "WhiteSmoke"></PasswordBox>
+                
+           
+        </Border>
+        <Label Content="{x:Static lang:Resources.adress}"></Label>
+        <Border CornerRadius="15" Width="150" HorizontalAlignment="Left" BorderThickness="2" BorderBrush= "DarkGoldenrod" Background= "WhiteSmoke" Height="30">
+            <TextBox Name="txtadress" Height="15" Width="140" BorderThickness="0" Background= "WhiteSmoke"></TextBox>
+        </Border>
+        <Label Content="{x:Static lang:Resources.position}"></Label>
+        <Border CornerRadius="15" Width="150" HorizontalAlignment="Left" BorderThickness="2" BorderBrush= "DarkGoldenrod" Background= "WhiteSmoke" Height="30">
+            <TextBox Name="txtposition" Height="15" Width="140" BorderThickness="0" Background= "WhiteSmoke"></TextBox>
+        </Border>
+        <Label Content="{x:Static lang:Resources.degree}"></Label>
+        <Border CornerRadius="15" Width="150" HorizontalAlignment="Left" BorderThickness="2" BorderBrush= "DarkGoldenrod" Background= "WhiteSmoke" Height="30">
+            <TextBox Name="txtdegree" Height="15" Width="140" BorderThickness="0" Background= "WhiteSmoke"></TextBox>
+        </Border>
+        <Border CornerRadius="15" Width="150" Margin="0,5,0,0" HorizontalAlignment="Left" BorderThickness="2" BorderBrush= "DarkGoldenrod" Background= "WhiteSmoke" Height="30">
+            <Button Content="Generate" Click="Button_Click"  FontWeight="Bold" Background="Transparent" Padding="0,0,0,2" BorderThickness="0"></Button>
+        </Border>
+        <TextBox Name="txtoffer" Margin ="5" Height="300" Background="LightGoldenrodYellow"></TextBox>
+
+    </StackPanel>
+       
+
+       
+</Window>
